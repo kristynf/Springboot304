@@ -12,13 +12,13 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception{
         Cars car;
-        car = new Cars(2002, "Ford", "Focus");
+        car = new Cars("2002", "Ford", "Focus");
         repository.save(car);
 
-        car = new Cars(2015, "Chevy", "Blazer");
+        car = new Cars("2015", "Chevy", "Blazer");
         repository.save(car);
 
-        car = new Cars(2019, "Subaru", "Crosstrek");
+        car = new Cars("2019", "Subaru", "Crosstrek");
         repository.save(car);
     }
 }

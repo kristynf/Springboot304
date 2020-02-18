@@ -15,8 +15,8 @@ public class Cars {
     private long id;
 
     @NotNull
-    @Size(min=4, max=4)
-    private int year;
+    @Size(min=4, max = 4)
+    private String year;
 
     @NotNull
     @Size(min=3)
@@ -29,7 +29,7 @@ public class Cars {
     public Cars() {
     }
 
-    public Cars(@Size(min = 4, max = 4) int year, @Size(min = 3) String make, @Size(min = 3) String model) {
+    public Cars(@Size(min=4, max = 4) String year, @Size(min = 3) String make, @Size(min = 3) String model) {
         this.year = year;
         this.make = make;
         this.model = model;
@@ -43,11 +43,11 @@ public class Cars {
         this.id = id;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
